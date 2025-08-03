@@ -5,9 +5,10 @@ import joblib
 import datetime
 
 # Load model and preprocessors
-model = joblib.load("churn_model.pkl")
-scaler = joblib.load("scaler.pkl")
-encoder = joblib.load("encoder.pkl")  # Optional: not used directly here, but mentioned in case recruiters ask
+model = joblib.load("models/01_churn_model.pkl")
+scaler = joblib.load("models/02_scaler.pkl")
+encoder = joblib.load("models/03_encoder.pkl")
+ # Optional: not used directly here, but mentioned in case recruiters ask
 
 # Define mappings for categorical values (to improve UX)
 gender_map = {"Female": 0, "Male": 1}

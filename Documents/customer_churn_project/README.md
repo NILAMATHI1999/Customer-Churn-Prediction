@@ -4,17 +4,18 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)  
 ![scikit-learn](https://img.shields.io/badge/ML-scikit--learn-orange)  
 
-An **ML-powered web app for predicting customer churn** using **Streamlit** and **Random Forest**. The app allows users to input customer details and get real-time churn predictions with probability scores.
+An **end-to-end Machine Learning project** for predicting **customer churn** using a **Streamlit web application**. This app lets users input customer details and get **real-time churn predictions** with probability scores and a prediction log.
 
 ---
 
 ## 🔍 Problem Statement
 
-Customer churn is when customers stop using a company’s service. Retaining customers is crucial for subscription-based businesses.  
+Customer churn occurs when customers stop using a company’s service. Retaining customers is crucial for subscription-based businesses.  
+
 The goal of this project is to:
 - Predict **whether a customer will stay or churn** based on their demographics and service usage.
 - Provide a **simple web interface** to make predictions accessible for business users.
-- Learn how to build and deploy a **Machine Learning app**.
+- Demonstrate an **end-to-end Machine Learning workflow**.
 
 ---
 
@@ -35,18 +36,17 @@ The goal of this project is to:
 ## ⚙️ Features Used for Prediction
 
 | Feature Name       | Description                        |
-|--------------------|----------------------------------|
-| gender             | Gender of the customer            |
-| SeniorCitizen      | Whether the customer is a senior  |
-| Partner            | Has a partner                     |
-| Dependents         | Has dependents                   |
-| tenure             | Number of months with company     |
-| Contract           | Contract type                     |
-| InternetService    | Type of internet                  |
+|--------------------|-----------------------------------|
+| gender             | Gender of the customer           |
+| SeniorCitizen      | Whether the customer is a senior |
+| Partner            | Has a partner                    |
+| Dependents         | Has dependents                  |
+| tenure             | Number of months with company    |
+| Contract           | Contract type                    |
+| InternetService    | Type of internet                 |
 | PaymentMethod      | Payment method                   |
-| MonthlyCharges     | Monthly billing amount            |
-| TotalCharges       | Lifetime billing amount           |
-| ...and other binary service features                |
+| MonthlyCharges     | Monthly billing amount           |
+| TotalCharges       | Lifetime billing amount          |
 
 ---
 
@@ -64,7 +64,7 @@ The goal of this project is to:
 | Accuracy   | ~79%   |
 
 **Confusion Matrix**:  
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](02_confusion_matrix.png)
 
 ---
 
@@ -80,10 +80,16 @@ The app provides:
 
 ---
 
+## 🖼 App Screenshot
+
+![Customer Churn App](images/app_screenshot.png)
+
+---
+
 ## 🧰 Tools & Technologies Used
 
 | Category           | Tools / Libraries         |
-|--------------------|--------------------------|
+|--------------------|---------------------------|
 | Language           | Python 3                 |
 | ML Framework       | scikit-learn             |
 | Web Framework      | Streamlit                |
@@ -108,10 +114,7 @@ venv\Scripts\activate
 source venv/bin/activate
 
 # 3️⃣ Install Dependencies
-pip install -r requirements.txt
+pip install -r 03_requirements.txt
 
 # 4️⃣ Run the Streamlit App
-streamlit run app.py
-
-# The app will open in your browser at:
-# 👉 http://localhost:8501
+streamlit run 01_app.py
