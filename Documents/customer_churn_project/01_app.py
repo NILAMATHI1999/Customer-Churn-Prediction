@@ -5,10 +5,13 @@ import numpy as np
 import joblib
 import datetime
 
+
+
 # Load model and preprocessors
-model = joblib.load("models/01_churn_model.pkl")
-scaler = joblib.load("models/02_scaler.pkl")
-encoder = joblib.load("models/03_encoder.pkl")
+model = joblib.load("Documents/customer_churn_project/models/01_churn_model.pkl")
+scaler = joblib.load("Documents/customer_churn_project/models/02_scaler.pkl")
+encoder = joblib.load("Documents/customer_churn_project/models/03_encoder.pkl")
+
 
  # Optional: not used directly here, but mentioned in case recruiters ask
 
