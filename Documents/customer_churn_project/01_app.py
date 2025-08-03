@@ -8,6 +8,7 @@ import datetime
 model = joblib.load("models/01_churn_model.pkl")
 scaler = joblib.load("models/02_scaler.pkl")
 encoder = joblib.load("models/03_encoder.pkl")
+
  # Optional: not used directly here, but mentioned in case recruiters ask
 
 # Define mappings for categorical values (to improve UX)
